@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Field for New Tasks -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a task"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Add Tasks -->
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Clear Selected Tasks -->
+    <Button
+        android:id="@+id/buttonClearSelectedTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Selected Tasks"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView to Display the Tasks -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+</LinearLayout>
